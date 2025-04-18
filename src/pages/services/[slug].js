@@ -389,7 +389,18 @@ export async function getStaticPaths() {
     'commercial-ev-solutions',
     'garden-lighting',
     'rewiring',
-    'ev-charger-sales'
+    'ev-charger-sales',
+    'ev-maintenance',
+    'ev-charger-installation',
+    'ev-charging',
+    'solar-maintenance',
+    'solar-inverters',
+    'solar-installation',
+    'solar-panel-sales',
+    'generator-repair',
+    'generator-maintenance',
+    'generator-installation',
+    'generator-sales',
   ];
 
   const paths = services.map(slug => ({ params: { slug } }));
