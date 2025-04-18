@@ -516,6 +516,68 @@ const serviceData = [
       ]
     },
     {
+      id: "ev-charger-sales",
+      title: "EV Charger Sales and Installation",
+      slug: "ev-charger-sales",
+      metaDescription: "Professional electric vehicle charging station sales and installation services across Ghana. Expert solutions for home, business, and commercial locations with full compliance to safety standards.",
+      ogImage: "/images/services/ev-charger.jpg",
+      icon: "Battery",
+      shortDescription: "Complete electric vehicle charging solutions for homes and businesses, with sales and installation of high-quality chargers.",
+      fullDescription: "As electric vehicles become more prevalent across Ghana, we provide comprehensive EV charging solutions for both residential and commercial clients. Our service includes consultation, sales of leading EV charger brands, professional installation, and ongoing maintenance to ensure reliable charging facilities for your electric vehicles.",
+      features: [
+        "Wide range of EV chargers for all vehicle types",
+        "Level 1, Level 2, and DC fast charging options",
+        "Residential and commercial installation",
+        "Smart charging systems with monitoring apps",
+        "Weatherproof outdoor installations"
+      ],
+      benefits: [
+        "Future-proof your property with EV infrastructure",
+        "Increase property value with modern amenities",
+        "Attract eco-conscious customers to your business",
+        "Reduced charging times with optimized systems",
+        "Compliant with international safety standards"
+      ],
+      locations: ["Accra", "Kumasi", "Takoradi", "Cape Coast", "Tema", "Ghana Nationwide"],
+      faq: [
+        {
+          question: "What types of EV chargers do you offer?",
+          answer: "We offer a variety of chargers including Level 1 (standard outlet charging), Level 2 (240V faster charging), and select DC fast chargers for commercial applications. Our range includes both tethered and untethered units from reputable manufacturers."
+        },
+        {
+          question: "How long does installation take?",
+          answer: "Typical residential installations can be completed in 1-2 days, while commercial installations may take 2-5 days depending on complexity and required electrical upgrades. We'll provide a specific timeframe after our initial assessment."
+        }
+      ],
+      relatedServices: ["electrical-installation", "commercial-projects", "electrical-maintenance"],
+      processSteps: [
+        {
+          title: "Consultation",
+          description: "We assess your vehicle type, charging needs, property electrical capacity, and usage patterns to recommend optimal charging solutions."
+        },
+        {
+          title: "Site Survey",
+          description: "Our technicians visit your property to examine electrical infrastructure and determine the best location and required upgrades."
+        },
+        {
+          title: "Proposal",
+          description: "We provide a detailed quote including equipment options, installation costs, and any necessary electrical upgrades."
+        },
+        {
+          title: "Equipment Selection",
+          description: "Based on our consultation, you'll select from our range of chargers that best suit your needs and budget."
+        },
+        {
+          title: "Installation",
+          description: "Our certified electricians complete the installation with minimal disruption, ensuring all safety standards are met."
+        },
+        {
+          title: "Commissioning",
+          description: "We test the system thoroughly, provide operational training, and ensure everything functions perfectly before handover."
+        }
+      ]
+    },
+    {
       id: "rewiring",
       title: "House Rewiring Services",
       slug: "rewiring",

@@ -388,7 +388,8 @@ export async function getStaticPaths() {
     'emergency-services',
     'commercial-ev-solutions',
     'garden-lighting',
-    'rewiring'
+    'rewiring',
+    'ev-charger-sales'
   ];
 
   const paths = services.map(slug => ({ params: { slug } }));
