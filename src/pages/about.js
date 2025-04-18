@@ -1,16 +1,16 @@
 // pages/about.js
 import { motion } from 'framer-motion';
 import {
-    Award,
-    Briefcase,
-    Building,
-    CheckCircle,
-    ChevronRight,
-    ClipboardCheck,
-    Clock, MapPin, Phone, Shield,
-    Sun,
-    Target, Users,
-    Zap
+  Award,
+  Briefcase,
+  Building,
+  CheckCircle,
+  ChevronRight,
+  ClipboardCheck,
+  Clock, MapPin, Phone, Shield,
+  Sun,
+  Target, Users,
+  Zap
 } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -173,7 +173,7 @@ export default function About() {
               </div>
               <h4 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h4>
               <p className="text-gray-600">
-                To be Ghana's most trusted name in electrical engineering, known for our technical expertise, innovation, and deep understanding of the country's unique needs, while leading the industry in sustainable electrical solutions that benefit Ghanaian communities.
+                To be Ghana&rsquo;s most trusted name in electrical engineering, known for our technical expertise, innovation, and deep understanding of the country&rsquo;s  unique needs, while leading the industry in sustainable electrical solutions that benefit Ghanaian communities.
               </p>
             </motion.div>
             
@@ -546,7 +546,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Work with Ghana's Trusted Electrical Team?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Work with Ghana&rsquo;s  Trusted Electrical Team?</h2>
               <p className="text-xl text-gray-300 mb-10">
                 Let Richy Electricals bring our expertise to your project, anywhere in Ghana.
               </p>
@@ -625,7 +625,7 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.5 }}
             className="mt-10 text-center"
           >
-            <p className="text-gray-600">Don't see your region? Contact us - we may still be able to serve you!</p>
+            <p className="text-gray-600">Don&rsquo;t see your region? Contact us - we may still be able to serve you!</p>
           </motion.div>
         </div>
       </section>

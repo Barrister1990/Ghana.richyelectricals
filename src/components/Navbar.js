@@ -108,7 +108,7 @@ const Navbar = () => {
                     <span className={`text-lg font-bold transition-colors duration-300 ${scrolled ? 'text-green-600' : 'text-green-500'}`}>
                       RichyElectricals Ghana
                     </span>
-                    <span className="text-xs text-gray-500">Illuminating Ghana's Future</span>
+                    <span className="text-xs text-gray-500">Illuminating Ghana&rsquo;s Future</span>
                   </div>
                 </Link>
               </div>
