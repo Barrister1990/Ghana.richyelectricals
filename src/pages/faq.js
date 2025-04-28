@@ -1,10 +1,9 @@
 // pages/faq.js
+import SEOHead from '@/components/SEOHead';
 import { motion } from 'framer-motion';
 import { ArrowRight, ChevronRight, HelpCircle, Mail, MessageSquare, Phone, Search } from 'lucide-react';
-import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-
 export default function FAQ() {
   // State for FAQ accordion and search
   const [activeIndices, setActiveIndices] = useState({});
@@ -241,12 +240,15 @@ export default function FAQ() {
   const hasSearchResults = Object.keys(filteredFaqs).length > 0;
 
   return (
+    <>
+    <SEOHead 
+  title="Frequently Asked Questions | Richyelectricals GH"
+  description="Find answers to common questions about electrical services, generator sales, solar installations, and EV charging solutions in Ghana."
+  canonicalUrl="https://www.richyelectricalsgh.com/faq"
+/>
+
+   
     <div className="min-h-screen pt-24">
-      <Head>
-        <title>Frequently Asked Questions | Richy Electricals | UK Electrical Engineering Experts</title>
-        <meta name="description" content="Find answers to common questions about our electrical, generator, and solar services. Expert solutions throughout the UK." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
@@ -259,7 +261,7 @@ export default function FAQ() {
         {/* Animated geometric shapes */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <motion.div 
-            className="absolute w-64 h-64 rounded-full bg-orange-500/5 blur-3xl"
+            className="absolute w-64 h-64 rounded-full bg-green-500/5 blur-3xl"
             animate={{ 
               x: [0, 100, 50, 0], 
               y: [0, -50, 100, 0],
@@ -296,7 +298,7 @@ export default function FAQ() {
               transition={{ duration: 0.7 }}
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                Frequently Asked <span className="text-orange-500">Questions</span>
+                Frequently Asked <span className="text-green-500">Questions</span>
               </h1>
               <p className="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
                 Find answers to common questions about our electrical, generator, and solar services.
@@ -313,7 +315,7 @@ export default function FAQ() {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search for questions or keywords..."
-                className="w-full py-4 pl-5 pr-12 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent shadow-sm"
+                className="w-full py-4 pl-5 pr-12 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent shadow-sm"
               />
               <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400">
                 <Search className="w-5 h-5" />
@@ -334,7 +336,7 @@ export default function FAQ() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={`#${category.id}`} className="inline-flex items-center py-3 px-6 rounded-full bg-gray-100 hover:bg-orange-100 text-gray-800 font-medium transition-colors duration-300">
+                <Link href={`#${category.id}`} className="inline-flex items-center py-3 px-6 rounded-full bg-gray-100 hover:bg-green-100 text-gray-800 font-medium transition-colors duration-300">
                   <span className="mr-2">{category.icon}</span>
                   {category.title}
                 </Link>
@@ -360,7 +362,7 @@ export default function FAQ() {
               </p>
               <button 
                 onClick={() => setSearchTerm('')}
-                className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-full transition-colors duration-300"
+                className="inline-block bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-full transition-colors duration-300"
               >
                 Clear Search
               </button>
@@ -385,12 +387,12 @@ export default function FAQ() {
                     className="mb-8"
                   >
                     <div className="flex items-center mb-2">
-                      <div className="bg-orange-100 p-2 rounded-full mr-3">
+                      <div className="bg-green-100 p-2 rounded-full mr-3">
                         {category.icon}
                       </div>
                       <h2 className="text-3xl font-bold text-gray-900">{category.title}</h2>
                     </div>
-                    <div className="h-1 w-20 bg-orange-500 rounded"></div>
+                    <div className="h-1 w-20 bg-green-500 rounded"></div>
                   </motion.div>
 
                   <div className="space-y-4">
@@ -406,7 +408,7 @@ export default function FAQ() {
                           onClick={() => toggleFaq(categoryIndex, faqIndex)}
                           className={`w-full flex justify-between items-center text-left p-5 rounded-lg ${
                             activeIndices[`${categoryIndex}-${faqIndex}`] 
-                              ? 'bg-orange-50 text-orange-700' 
+                              ? 'bg-green-50 text-green-700' 
                               : 'bg-gray-50 hover:bg-gray-100 text-gray-900'
                           } transition-colors duration-300`}
                         >
@@ -451,7 +453,7 @@ export default function FAQ() {
                 return (
                   <div key={categoryIndex} className="mb-10">
                     <h3 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                      <div className="bg-orange-100 p-1 rounded-full mr-2">
+                      <div className="bg-green-100 p-1 rounded-full mr-2">
                         {category.icon}
                       </div>
                       {category.title}
@@ -469,7 +471,7 @@ export default function FAQ() {
                             onClick={() => toggleFaq(categoryIndex, faqIndex)}
                             className={`w-full flex justify-between items-center text-left p-5 rounded-lg ${
                               activeIndices[`${categoryIndex}-${faqIndex}`] 
-                                ? 'bg-orange-50 text-orange-700' 
+                                ? 'bg-green-50 text-green-700' 
                                 : 'bg-gray-50 hover:bg-gray-100 text-gray-900'
                             } transition-colors duration-300`}
                           >
@@ -520,7 +522,7 @@ export default function FAQ() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                icon: <Phone className="w-10 h-10 text-orange-500" />,
+                icon: <Phone className="w-10 h-10 text-green-500" />,
                 title: "Call Us",
                 description: "Speak directly with our friendly support team",
                 action: "+447491565676",
@@ -528,7 +530,7 @@ export default function FAQ() {
                 link: "tel:+447491565676"
               },
               {
-                icon: <Mail className="w-10 h-10 text-orange-500" />,
+                icon: <Mail className="w-10 h-10 text-green-500" />,
                 title: "Email Us",
                 description: "Send us your questions and we'll respond promptly",
                 action: "info@richyelectricals.co.uk",
@@ -536,7 +538,7 @@ export default function FAQ() {
                 link: "mailto:info@richyelectricals.co.uk"
               },
               {
-                icon: <MessageSquare className="w-10 h-10 text-orange-500" />,
+                icon: <MessageSquare className="w-10 h-10 text-green-500" />,
                 title: "Live Chat",
                 description: "Chat with our team for immediate assistance",
                 action: "",
@@ -553,7 +555,7 @@ export default function FAQ() {
                 className="bg-white rounded-xl shadow-sm p-8 text-center hover:shadow-md transition-shadow duration-300"
               >
                 <div className="flex justify-center mb-4">
-                  <div className="bg-orange-100 rounded-full p-4">
+                  <div className="bg-green-100 rounded-full p-4">
                     {contact.icon}
                   </div>
                 </div>
@@ -561,7 +563,7 @@ export default function FAQ() {
                 <p className="text-gray-600 mb-6">{contact.description}</p>
                 <Link 
                   href={contact.link} 
-                  className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium"
+                  className="inline-flex items-center text-green-600 hover:text-green-700 font-medium"
                 >
                   {contact.actionLabel} <ArrowRight className="w-4 h-4 ml-1" />
                 </Link>
@@ -572,7 +574,7 @@ export default function FAQ() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-orange-600 relative overflow-hidden animate-on-scroll">
+      <section className="py-16 bg-green-600 relative overflow-hidden animate-on-scroll">
         <div className="absolute inset-0 opacity-10">
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
             <defs>
@@ -600,20 +602,20 @@ export default function FAQ() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Need Professional Electrical, Generator or Solar Services?
               </h2>
-              <p className="text-lg text-orange-100 mb-8">
+              <p className="text-lg text-green-100 mb-8">
                 Our expert team is ready to help you with any electrical, generator or solar power needs.
                 Contact us today for a free consultation and quote.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link 
                   href="/contact" 
-                  className="inline-block bg-white text-orange-600 font-medium py-3 px-8 rounded-full hover:bg-orange-50 transition-colors duration-300"
+                  className="inline-block bg-white text-green-600 font-medium py-3 px-8 rounded-full hover:bg-green-50 transition-colors duration-300"
                 >
                   Get Free Quote
                 </Link>
                 <Link 
                   href="/services" 
-                  className="inline-block bg-orange-700 text-white font-medium py-3 px-8 rounded-full hover:bg-orange-800 transition-colors duration-300"
+                  className="inline-block bg-green-700 text-white font-medium py-3 px-8 rounded-full hover:bg-green-800 transition-colors duration-300"
                 >
                   Explore Services
                 </Link>
@@ -623,5 +625,6 @@ export default function FAQ() {
         </div>
       </section>
     </div>
+    </>
   );
 }

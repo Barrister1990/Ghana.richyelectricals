@@ -62,7 +62,7 @@ const Navbar = () => {
                 Frequently Asked Questions
               </Link>
               <a 
-                href="https://richyelectricals.vercel.app/" 
+                href="https://richyelectricals.co.uk" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-sm font-medium text-gray-700 hover:text-green-600 transition-colors duration-300"
@@ -71,10 +71,10 @@ const Navbar = () => {
               </a>
             </div>
             <a 
-              href="tel:+233302123456" 
+              href="tel:+233209222856" 
               className="flex items-center text-sm font-medium text-gray-700 hover:text-green-600 transition-colors duration-300"
             >
-              <Phone className="h-4 w-4 mr-2" /> + (233) 302-123456
+              <Phone className="h-4 w-4 mr-2" /> + (233) 20 922 2856
             </a>
           </div>
         </div>
@@ -196,7 +196,7 @@ const Navbar = () => {
             Contact Us
           </Link>
           <a 
-            href="tel:+233302123456" 
+            href="tel:+233209222856" 
             className="w-full max-w-xs text-center border border-green-300 text-green-600 px-5 py-3 rounded-full font-medium shadow-sm transition-all duration-300 mt-2 hover:bg-green-50 flex items-center justify-center"
             onClick={toggleMenu}
           >

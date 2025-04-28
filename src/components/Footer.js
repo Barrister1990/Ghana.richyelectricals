@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
 import {
-    Clock,
-    Facebook,
-    Instagram,
-    Linkedin,
-    Mail,
-    MapPin,
-    Music,
-    Phone,
-    Youtube
+  Clock,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Music,
+  Phone,
+  Youtube
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -92,7 +92,7 @@ export default function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-3">
-              {['Home', 'About Us', 'Services', 'Projects', 'Testimonials', 'Contact'].map((link, index) => (
+              {['Home', 'About', 'Services', 'Projects', 'Contact'].map((link, index) => (
                 <li key={index}>
                   <Link href={`/${link.toLowerCase().replace(/\s+/g, '-')}`} className="text-gray-400 hover:text-green-500 transition-colors flex items-center">
                     <span className="mr-2">›</span> {link}
@@ -137,19 +137,19 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-green-500 mr-3 mt-1" />
                 <span className="text-gray-400">
-                  25 Independence Avenue<br /> East Legon, Accra<br />Ghana
+                Regimanuel estate balloon gate 4th link house 9<br /> Kwabenya, Accra<br />Ghana
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 text-green-500 mr-3" />
-                <a href="tel:+233302123456" className="text-gray-400 hover:text-green-500 transition-colors">
-                  +233 302 123 456
+                <a href="tel:+233209222856" className="text-gray-400 hover:text-green-500 transition-colors">
+                  +233 20 922 2856
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 text-green-500 mr-3" />
-                <a href="mailto:info@richyelectricals.com.gh" className="text-gray-400 hover:text-green-500 transition-colors">
-                  info@richyelectricals.com.gh
+                <a href="mailto:info@richyelectricalsgh.co.uk" className="text-gray-400 hover:text-green-500 transition-colors">
+                  info@richyelectricals.co.uk
                 </a>
               </li>
               <li className="flex items-center">

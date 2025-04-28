@@ -1,7 +1,9 @@
+import SEOHead from "@/components/SEOHead";
 import { motion } from "framer-motion";
 import {
   Award,
   BatteryCharging,
+  Building,
   ChevronRight,
   Clock,
   FileText,
@@ -14,13 +16,12 @@ import {
   Settings,
   ShieldCheck,
   Sun,
-  Zap,
+  Zap
 } from "lucide-react";
 import Image from 'next/image';
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
-
 
 export default function HomePage() {
   // For counting animation
@@ -128,6 +129,11 @@ export default function HomePage() {
 
   return (
     <>
+<SEOHead 
+  title="Richyelectricals GH | Electrical, Generator & Solar Solutions in Ghana"
+  description="Trusted electrical experts in Ghana for residential, commercial, and industrial needs. We provide generator sales, solar installations, EV charging setups and more."
+  canonicalUrl="https://www.richyelectricalsgh.com/"
+/>
 
     <div className="min-h-screen">
      
@@ -201,7 +207,7 @@ export default function HomePage() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
-                  href="tel:+233200123456"
+                  href="tel:+233209222856"
                   className="inline-block bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-medium py-3 px-8 rounded-full border border-white/30 transition-all duration-300 items-center"
                 >
                   Call Us Now
@@ -345,6 +351,12 @@ export default function HomePage() {
                 description:
                   "24/7 emergency electrical assistance with rapid response throughout Ghana when you need it most.",
                 link: "/services#emergency",
+              },
+              {
+                icon: <Building className="w-10 h-10 text-green-500" />,
+                title: "Building Block Sales",
+                description: "High-quality building blocks available in various sizes and materials, perfect for all your construction projects throughout Ghana.",
+                link: "/services/building-block-sales",
               },
             ].map((service, index) => (
               <motion.div
@@ -559,11 +571,11 @@ export default function HomePage() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Link
-                      href="tel:+233200123456"
+                      href="tel:+233209222856"
                       className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-medium py-3 px-8 rounded-full transition-all duration-300 w-full"
                     >
                       <Phone className="w-5 h-5 mr-2" />
-                      Call Us: +233 200 123 456
+                      Call Us: +233 20 922 2856
                     </Link>
                   </motion.div>
                 </div>
@@ -797,8 +809,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+233 200 123 456</p>
-                    <p className="text-gray-600">+233 302 987 654</p>
+                    <p className="text-gray-600">+233 20 922 2856</p>
                   </div>
                 </div>
                 
@@ -808,7 +819,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Address</h3>
-                    <p className="text-gray-600">123 Independence Avenue</p>
+                    <p className="text-gray-600">Regimanuel estate balloon gate 4th link house 9, Kwabenya</p>
                     <p className="text-gray-600">Accra, Ghana</p>
                   </div>
                 </div>

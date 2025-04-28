@@ -1,4 +1,5 @@
 // pages/about.js
+import SEOHead from '@/components/SEOHead';
 import { motion } from 'framer-motion';
 import {
   Award,
@@ -14,11 +15,15 @@ import {
 } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-
 export default function About() {
   return (
     <>
-
+    <SEOHead 
+        title="About Us | Richyelectricals GH - Electrical Experts in Ghana"
+        description="Learn about Richyelectricals GH, Ghana’s certified electrical, solar, and generator specialists. Dedicated to delivering safe and innovative energy solutions."
+        canonicalUrl="https://www.richyelectricalsgh.com/about"
+      />
+      
     <div className="min-h-screen w-screen pt-24">
      
 
@@ -499,23 +504,23 @@ export default function About() {
                 <div className="space-y-3 text-gray-600">
                   <p className="flex items-center">
                     <Building className="w-4 h-4 mr-2 text-gray-400" />
-                    45 Independence Avenue, Cantonments, Accra, Ghana
+                    Regimanuel estate balloon gate 4th link house 9, Kwabenya
                   </p>
                   <a 
-                    href="tel:+233302123456"
+                    href="tel:+233209222856"
                     className="flex items-center hover:text-green-500 transition-colors"
                   >
                     <Phone className="w-4 h-4 mr-2 text-gray-400" />
-                    +233 30 212 3456
+                    +233 20 9222 858
                   </a>
                   <a 
-                    href="mailto:info@richyelectricals.com.gh" 
+                    href="mailto:info@richyelectricals.co.uk" 
                     className="flex items-center text-green-500 hover:underline"
                   >
                     <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
-                    info@richyelectricals.com.gh
+                    info@richyelectricals.co.uk
                   </a>
                 </div>
               </div>

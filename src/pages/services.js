@@ -1,25 +1,18 @@
 // pages/services.js
+import SEOHead from '@/components/SEOHead';
 import { motion } from 'framer-motion';
 import {
-  Award,
   Battery,
-  BookOpen,
-  Briefcase,
   CalendarClock,
-  CheckCircle,
-  CheckSquare,
   ChevronRight,
-  ClipboardCheck,
-  Clock, Download,
-  GraduationCap,
+  Clock,
   HelpCircle, MessageSquare, Phone, ScrollText, Settings,
-  Shield,
   ShieldCheck,
-  Star,
   Sun,
   Users,
   Wrench, Zap
 } from 'lucide-react';
+import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -364,6 +357,76 @@ export default function Services() {
   ];
   return (
     <>
+    <SEOHead 
+        title="Electrical, Generator & Solar Services in Ghana | Richyelectricals GH"
+        description="Professional electrical services including generator sales, solar installations, and EV charging solutions across Ghana. Certified experts for all your electrical needs."
+        canonicalUrl="https://www.richyelectricalsgh.com/services"
+      />
+      <Head>
+  
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Richyelectricals GH",
+            "image": "https://www.richyelectricalsgh.com/logo.jpg",
+            "url": "https://www.richyelectricalsgh.com",
+            "telephone": "+233209222856",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Regimanuel estate ballon gate 4th link house 9, Kwabenya",
+              "addressLocality": "Accra",
+              "addressRegion": "Greater Accra",
+              "postalCode": "23",
+              "addressCountry": "GH"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                 "Saturday"
+              ],
+              "opens": "08:00",
+              "closes": "17:00"
+            },
+            "sameAs": [
+              "https://www.facebook.com/richyelectricalsgh",
+              "https://www.instagram.com/richyelectricalsgh"
+            ],
+            "priceRange": "₵₵-₵₵₵",
+            "serviceType": [
+              'Fuse board upgrades',
+'Generator sales installation',
+'Solar sales installation',
+'Ev charging installation',
+'Electrical inspections',
+'New installations',
+'Fault finding',
+'Emergency services',
+'Commercial ev solutions',
+'Garden lighting',
+'Rewiring',
+'Ev charger sales',
+'Ev maintenance',
+'Ev charger installation',
+'Ev charging',
+'Solar maintenance',
+'Solar inverters',
+'Solar installation',
+'Solar panel sales',
+'Generator repair',
+'Generator maintenance',
+'Generator installation',
+'Generator sales',
+'Building Block Sales'
+            ]
+          })
+        }} />
+      </Head>
 
     <div className="min-h-screen pt-24">
      
@@ -618,182 +681,99 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Certifications & Compliance */}
- {/* Our Certifications */}
-<section className="py-20 bg-gray-50">
-  <div className="container mx-auto px-6 lg:px-8">
-    <div className="text-center mb-16">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-      >
-        <h2 className="inline-block text-sm font-semibold text-green-500 uppercase tracking-wider border-b-2 border-green-500 pb-1 mb-2">Credentials</h2>
-        <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our London Certifications & Affiliations</h3>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          We maintain the highest industry standards through professional certifications and memberships across London
-        </p>
-      </motion.div>
-    </div>
-    
-    {/* Professional Qualifications */}
-    <div className="mb-16">
-      <h4 className="text-xl font-semibold text-gray-800 mb-6 text-center">Professional Qualifications</h4>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-        {/* EAL Level 3 Diploma */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center hover:shadow-lg transition-shadow"
-        >
-          <div className="w-16 h-16 bg-orange-100 rounded-full mb-4 flex items-center justify-center">
-            <Award className="w-8 h-8 text-green-500" />
+      <section className="py-16 border-t border-gray-200">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              Our Certifications
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Fully certified and compliant with all Ghanaian electrical standards to ensure the highest quality and safety in every project
+            </p>
           </div>
-          <h4 className="text-center font-medium text-gray-900 mb-1">EAL Level 3 Diploma</h4>
-          <p className="text-sm text-gray-600 text-center">Electrical Installation (600/9331/6)</p>
-        </motion.div>
-        
-        {/* City & Guilds Initial Verification */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center hover:shadow-lg transition-shadow"
-        >
-          <div className="w-16 h-16 bg-blue-100 rounded-full mb-4 flex items-center justify-center">
-            <CheckCircle className="w-8 h-8 text-blue-500" />
-          </div>
-          <h4 className="text-center font-medium text-gray-900 mb-1">City & Guilds 2391-50</h4>
-          <p className="text-sm text-gray-600 text-center">Initial Verification of Electrical Installations</p>
-        </motion.div>
-        
-        {/* Periodic Inspection & Testing */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center hover:shadow-lg transition-shadow"
-        >
-          <div className="w-16 h-16 bg-green-100 rounded-full mb-4 flex items-center justify-center">
-            <ClipboardCheck className="w-8 h-8 text-green-500" />
-          </div>
-          <h4 className="text-center font-medium text-gray-900 mb-1">City & Guilds 2391-51</h4>
-          <p className="text-sm text-gray-600 text-center">Periodic Inspection & Testing</p>
-        </motion.div>
-        
-        {/* Building Regulations */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center hover:shadow-lg transition-shadow"
-        >
-          <div className="w-16 h-16 bg-purple-100 rounded-full mb-4 flex items-center justify-center">
-            <Briefcase className="w-8 h-8 text-purple-500" />
-          </div>
-          <h4 className="text-center font-medium text-gray-900 mb-1">Building Regulations</h4>
-          <p className="text-sm text-gray-600 text-center">Part P (2393-10)</p>
-        </motion.div>
-        
-        {/* EV Charging Points */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center hover:shadow-lg transition-shadow"
-        >
-          <div className="w-16 h-16 bg-red-100 rounded-full mb-4 flex items-center justify-center">
-            <Zap className="w-8 h-8 text-green-500" />
-          </div>
-          <h4 className="text-center font-medium text-gray-900 mb-1">EAL Level 3 Award</h4>
-          <p className="text-sm text-gray-600 text-center">Electric Vehicle Charging Points Installation</p>
-        </motion.div>
-        
-        {/* BPEC Solar PV */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center hover:shadow-lg transition-shadow"
-        >
-          <div className="w-16 h-16 bg-yellow-100 rounded-full mb-4 flex items-center justify-center">
-            <Sun className="w-8 h-8 text-yellow-500" />
-          </div>
-          <h4 className="text-center font-medium text-gray-900 mb-1">BPEC Certification</h4>
-          <p className="text-sm text-gray-600 text-center">Solar PV & Energy Storage Systems</p>
-        </motion.div>
-      </div>
-    </div>
-    
-    {/* Industry Memberships */}
-    <div>
-      <h4 className="text-xl font-semibold text-gray-800 mb-6 text-center">Industry Memberships & Approvals</h4>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {[
-          { name: "NICEIC Approved Contractor", icon: <Shield className="w-6 h-6 text-blue-500" /> },
-          { name: "MCS Certified Installer", icon: <CheckSquare className="w-6 h-6 text-green-500" /> },
-          { name: "18th Edition Qualified Engineers", icon: <BookOpen className="w-6 h-6 text-purple-500" /> },
-          { name: "SafeContractor Approved", icon: <ShieldCheck className="w-6 h-6 text-red-500" /> },
-          { name: "Construction Line Gold Member", icon: <Star className="w-6 h-6 text-yellow-500" /> },
-          { name: "ISO 9001:2015 Certified", icon: <Award className="w-6 h-6 text-green-500" /> },
-          { name: "ECA Member", icon: <Users className="w-6 h-6 text-indigo-500" /> },
-          { name: "City & Guilds Qualified Team", icon: <GraduationCap className="w-6 h-6 text-teal-500" /> }
-        ].map((cert, index) => (
-          <motion.div 
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.05 }}
-            className="bg-white rounded-lg shadow-sm p-4 flex items-center hover:shadow-md transition-shadow"
-          >
-            <div className="bg-gray-100 rounded-full p-2 mr-3 flex-shrink-0">
-              {cert.icon}
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="bg-green-600 h-2"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-center text-gray-800 mb-2">Energy Commission of Ghana</h3>
+                <p className="text-gray-600 text-center">Licensed Electrical Contractor</p>
+              </div>
             </div>
-            <span className="text-gray-800 text-sm font-medium">{cert.name}</span>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-    
-    <motion.div 
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.7 }}
-      className="mt-12 text-center"
-    >
-      <p className="text-gray-600 italic">All our technicians are fully qualified and regularly update their certifications</p>
-    </motion.div>
-    
-    {/* Floating badge */}
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: 0.8 }}
-      className="mt-12 flex justify-center"
-    >
-      <div className="bg-white rounded-xl shadow-lg p-4 flex items-center">
-        <div className="bg-green-500 rounded-full p-3 mr-4">
-          <ShieldCheck className="w-8 h-8 text-white" />
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="bg-blue-600 h-2"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-center text-gray-800 mb-2">Ghana Standards Authority</h3>
+                <p className="text-gray-600 text-center">Certified Electrical Equipment Installer</p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="bg-yellow-600 h-2"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-center text-gray-800 mb-2">Renewable Energy Association</h3>
+                <p className="text-gray-600 text-center">Certified Solar PV System Installer</p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="bg-red-600 h-2"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-center text-gray-800 mb-2">Ghana Fire Service</h3>
+                <p className="text-gray-600 text-center">Fire Safety Electrical Installation Certificate</p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="bg-purple-600 h-2"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-center text-gray-800 mb-2">Electricity Company of Ghana</h3>
+                <p className="text-gray-600 text-center">Electricity Grid Connection Certified Partner</p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="bg-orange-600 h-2"></div>
+              <div className="p-6">
+                <div className="flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-center text-gray-800 mb-2">ISO 9001:2015</h3>
+                <p className="text-gray-600 text-center">Quality Management System Certified</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <p className="text-sm text-gray-500">Fully Licensed &</p>
-          <p className="font-bold text-xl text-gray-900">Insured Services</p>
-        </div>
-      </div>
-    </motion.div>
-  </div>
-</section>
+      </section>
 
 
         {/* FAQ Section */}
@@ -885,7 +865,7 @@ export default function Services() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Link href="tel:+447491565676" className="inline-flex items-center bg-green-600 text-white font-medium py-3 px-8 rounded-full shadow-lg hover:bg-orange-700 transition-all duration-300">
+                  <Link href="tel:+233209222856" className="inline-flex items-center bg-green-600 text-white font-medium py-3 px-8 rounded-full shadow-lg hover:bg-orange-700 transition-all duration-300">
                     <Phone className="mr-2 w-5 h-5" />
                     Call Us Now
                   </Link>
@@ -906,19 +886,13 @@ export default function Services() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link href="/download-brochure" className="inline-flex items-center bg-white text-gray-800 border border-gray-300 font-medium py-2 px-5 rounded-full hover:bg-gray-50 transition-all duration-300">
-                  <Download className="mr-2 w-4 h-4" />
-                  Download Our Service Brochure
-                </Link>
+               
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link href="/help" className="inline-flex items-center text-gray-700 font-medium">
-                  <HelpCircle className="mr-1 w-4 h-4" />
-                  Need Help?
-                </Link>
+               
               </motion.div>
             </div>
           </div>

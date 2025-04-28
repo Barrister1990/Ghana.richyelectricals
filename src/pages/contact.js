@@ -1,4 +1,5 @@
 // pages/contact.js
+import SEOHead from '@/components/SEOHead';
 import { motion } from 'framer-motion';
 import { AlertCircle, Globe, Mail, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
@@ -109,6 +110,11 @@ export default function Contact() {
 
   return (
     <>
+<SEOHead 
+  title="Contact Us | Richyelectricals GH - Get in Touch Today"
+  description="Reach out to Richyelectricals GH for expert electrical, solar, and generator services in Ghana. Our team is ready to assist with your energy needs."
+  canonicalUrl="https://www.richyelectricalsgh.com/contact"
+/>
 
     <div className="min-h-screen pt-24">
       
@@ -160,7 +166,7 @@ export default function Contact() {
             className="max-w-4xl"
           >
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-              Contact <span className="text-green-500">Richy Electricals</span>
+              Contact <span className="text-green-500">Richy Electricals Ghana</span>
             </h1>
             <p className="text-lg text-gray-200">
               Get in touch with our team of experts for all your electrical needs in Ghana
@@ -204,7 +210,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Accra Office</h3>
-                    <p className="text-gray-600">15 Independence Avenue, Osu, Accra, Ghana</p>
+                    <p className="text-gray-600">Regimanuel estate balloon gate 4th link house 9, Kwabenya</p>
                   </div>
                 </div>
                 
@@ -214,7 +220,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+233 24 123 4567</p>
+                    <p className="text-gray-600">+233 20 9222 858</p>
                   </div>
                 </div>
                 
@@ -224,8 +230,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">General: info@richyelectricals.com</p>
-                    <p className="text-gray-600">Support: support@richyelectricals.com</p>
+                    <p className="text-gray-600">General: info@richyelectricals.co.uk</p>
+                   
                   </div>
                 </div>
                 
@@ -458,9 +464,9 @@ export default function Contact() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:+233241234567" className="bg-white text-green-600 font-medium px-6 py-3 rounded-lg shadow-md hover:bg-gray-100 transition-colors flex items-center justify-center">
+              <a href="tel:+233209222858" className="bg-white text-green-600 font-medium px-6 py-3 rounded-lg shadow-md hover:bg-gray-100 transition-colors flex items-center justify-center">
                 <Phone className="w-5 h-5 mr-2" />
-                <span>+233 24 123 4567</span>
+                <span>+233 20 9222 858</span>
               </a>
             </div>
           </motion.div>
@@ -483,7 +489,7 @@ export default function Contact() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:+233241234567" 
+                href="tel:+233209222856" 
                 className="bg-white text-blue-600 hover:bg-gray-100 font-medium px-8 py-3 rounded-lg transition-colors flex items-center justify-center"
               >
                 <Phone className="w-5 h-5 mr-2" />
